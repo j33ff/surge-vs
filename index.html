@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Surge vs GitHub Pages</title>
+
+</head>
+
+<body>
+<h1>GitHub Pages vs Surge for launching static sites<a href="https://surge.sh/" target="_blank">Surge.</a></h1>
+
+<h2>Comparing the two:</h2>
+
+<h3>Steps for GitHub Pages:</h3>
+<ol class="github">
+	<li>First off open up your browser</li>
+	<li>Go to github.com</li>
+	<li>Create an account</li>
+	<li>Once you have an account, log in on github.com</li>
+	<li>Then you will need to <a href="http://git-scm.com/downloads" target="_blank">install</a> the latest version of Git</li>
+	<li>After installing, open up your Terminal</li>
+	<li>Run the command: git config --global user.name "YOUR NAME"</li>
+	<li>Run the command: git config --global user.email "YOUR EMAIL ADDRESS"</li>
+	<li>You will then need to <a href="https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git" target="_blank">authenticate</a> with Github from Git</li>
+	<li>To authenticate, you need to generate SSH keys for each computer you will be using</li>
+	<li>First check for existing SSH keys--Run the command: ls -al ~/.ssh</li>
+	<li>Generate a new SSH key--Run the command: ssh-keygen -t rsa -C "your_email@example.com"</li>
+	<li>Enter a file to save the key (default settings are recommended) [press enter]</li>
+	<li>You'll then be asked to enter a passphrase</li>
+	<li>Re-enter passphrase</li>
+	<li>You'll then be given the ID to your SSH key</li>
+	<li>Ensure SSH agent is enabled--Run the command: $ eval "$(ssh-agent -s)"</li>
+	<li>Add your generated SSH key to the ssh-agent--Run the command: ssh-add ~/.ssh/id_rsa</li>
+	<li>Copy the SSH key to your clipboard for adding to your account--Run the command: pbcopy < ~/.ssh/id_rsa.pub</li>
+	<li>Open up your browser</li>
+	<li>Go to github.com</li>
+	<li>Login to your account</li>
+	<li>In the top right corner of any page click the user settings token/icon</li>
+	<li>In the user settings sidebar click SSH keys</li>
+	<li>Click Add SSH key</li>
+	<li>In the Title field add a descriptive label for the new key. e.g. "Personal Macbook Air"</li>
+	<li>Paste your key into the "Key" field</li>
+	<li>Click Add Key</li> 
+	<li>Confirm the action by entering your GitHub password</li>
+	<li>Open your terminal to test the connection</li>
+	<li>Run the command: ssh -T git@github.com</li>
+	<li>You may be prompted with a warning--verify the RSA key fingerprint in the warning message and type yes</li>
+	<li>If the username in the following greeting message matches your username then you've successfully set up your SSH key</li>
+	<li>Open up your Terminal</li>
+	<li>cd path/to/www</li>
+	<li>git init</li>
+	<li>git add .</li>
+	<li>git commit -m "my first commit"</li>
+	<li>git remote add origin git@github.com:me/my-project.git</li>
+	<li>git checkout -b gh-pages</li>
+	<li>git push origin gh-pages</li>
+	
+</ol>
+
+
+
+<h3>Steps for Surge:</h3>
+
+
+	<ol>
+		<li>Open web browser</li>
+		<li>Download and Install <a href="https://nodejs.org/" target="_blank">node.js</a></li>
+		<li>Open up your Terminal</li>
+		<li>Install surge by running: npm install --global surge</li>
+		<li>launch project by running: surge path/to/myproject myproject.surge.sh</li>
+	
+</ul>
+<br>
+<h3>Conclusion:</h3>
+<p> I recently joined the team that builds Surge as a practicum student and was tasked with comparing the workflow of launching a basic application through Surge vs GitHub Pages.<a href="https://surge.sh/" target="_blank">Surge</a> has separated itself by simplifying the process as a dedicated CDN through the terminal. I found that after reading the docs the implementation was relatively straight forward. The commands require a file path to your project and a domain name for an initial launch. GitHub Pages requires a lot more work for a new user to setup the environment between Git and GitHub. This would be a deterrent for some novice web developers who are using a CDN to launch their first project.</p>
+<br>
+<br>
+</body>
+
+</html>
