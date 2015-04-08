@@ -54,6 +54,12 @@
 	<li>git remote add origin git@github.com:me/my-project.git</li>
 	<li>git checkout -b gh-pages</li>
 	<li>git push origin gh-pages</li>
+	<li>After this I couldn't understand why my page wasn't updating on subsequent commits</li>
+	<li>If this is happening it could be because GitHub Pages is assuming that you're building you're project in Jekyll which is helpful sometimes but in this case I wasn't</li>
+	<li>To get around this create a .nojekyll file- Run the command: touch .nojekyll</li>
+	<li>Add it-Run the command: git add .nojekyll</li>
+	<li>Commit it-Run the command: git commit -m "adding .nojekyll"</li>
+	<li>Push it-Run the command: git push origin gh-pages</li>
 	
 </ol>
 
