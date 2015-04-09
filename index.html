@@ -5,7 +5,15 @@
 code {color:#454545;
 
 }
+
+body{
+
+	max-width:35em;
+	margin: 0 auto 10em auto;
+}
+
 </style>
+
 <title>Surge vs GitHub Pages</title>
 
 </head>
@@ -13,11 +21,11 @@ code {color:#454545;
 <body>
 <h1><a href="https://pages.github.com/" target="_blank">GitHub Pages</a> vs <a href="https://surge.sh/" target="_blank">Surge</a> for Launching Static Sites</h1>
 
-<h2>Comparing the two:</h2>
+<h2 class="heading">Comparing the two:</h2>
 
 <p>I recently joined the team that builds Surge as a practicum student and was tasked with comparing the first-run workflow of launching a static web application through Surge vs GitHub Pages. I'm relatively new to web development and this was my first time downloading and installing Node.js. I had previously dabbled with PHP on the backend and JavaScript on the front-end. My launches have always been through FTP by going through the cPanel of my hosting provider so launching through the terminal was a new approach for me. To give some context, my experience with the terminal has been collaborating with classmates at school, pulling and pushing from our group projects based on GitHub. In doing this comparison I created a list that could act as a tutorial based on the GitHub Pages and Surge documentation, respectively. I found that <a href="https://surge.sh/" target="_blank">Surge</a> has separated itself by simplifying the process as a dedicated CDN through the terminal.</p>
 
-<h3>Steps for GitHub Pages:</h3>
+<h3 class="heading heading-small">Steps for GitHub Pages:</h3>
 <ol>
 	<li>First off open up your browser</li>
 	<li>Go to github.com</li>
@@ -64,7 +72,7 @@ code {color:#454545;
 	<li>If this is happening it could be a result of GitHub Pages assuming that you're building your project in Jekyll which is helpful sometimes but in this case I wasn't using Jekyll.</li>
 	<li>To get around this create a .nojekyll file- Run the command: <code>touch .nojekyll</code></li>
 	<li>Add it-Run the command: <code>git add .nojekyll</code></li>
-	<li>Commit it-Run the command: <code>git commit -m "adding .nojekyll"</code></li>
+	<li>Commit it-Run the command: <code>git commit -am "adding .nojekyll"</code></li>
 	<li>Push it-Run the command: <code>git push origin gh-pages</code></li>
 	
 </ol>
