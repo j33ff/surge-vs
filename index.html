@@ -72,6 +72,9 @@ body{
 	<li>Run the command: <code>ssh -T git@github.com</code></li>
 	<li>You may be prompted with a warning--verify the RSA key fingerprint in the warning message and type yes</li>
 	<li>If the username in the following greeting message matches your username then you've successfully set up your SSH key</li>
+	<li>Open your web browser</li>
+	<li>Go to github.com</li>
+	<li>Create a new repository</li>
 	<li>Open up your Terminal</li>
 	<li><code>cd path/to/myproject</code></li>
 	<li><code>git init</code></li>
@@ -80,12 +83,7 @@ body{
 	<li><code>git remote add origin git@github.com:me/my-project.git</code></li>
 	<li><code>git checkout -b gh-pages</code></li>
 	<li><code>git push origin gh-pages</code></li>
-	<li>After this I couldn't understand why my page wasn't updating on subsequent commits</li>
-	<li>If this is happening it could be a result of GitHub Pages assuming that you're building your project in Jekyll which is helpful sometimes but in this case I wasn't using Jekyll.</li>
-	<li>To get around this create a .nojekyll file- Run the command: <code>touch .nojekyll</code></li>
-	<li>Add it-Run the command: <code>git add .nojekyll</code></li>
-	<li>Commit it-Run the command: <code>git commit -am "adding .nojekyll"</code></li>
-	<li>Push it-Run the command: <code>git push origin gh-pages</code></li>
+	
 	
 </ol>
 
