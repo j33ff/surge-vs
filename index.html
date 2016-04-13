@@ -43,35 +43,10 @@ body{
 	<li>Go to github.com</li>
 	<li>Create an account</li>
 	<li>Once you have an account, log in on github.com</li>
-	<li>Then you will need to <a href="http://git-scm.com/downloads" target="_blank">install</a> the latest version of Git</li>
+	<li>Then you will need to <a href="http://git-scm.com/downloads" target="_blank">install</a> the latest version of Git (though you may already have a suitable version)</li>
 	<li>After installing, open up your Terminal</li>
 	<li>Run the command: <code>git config --global user.name "YOUR NAME"</code></li>
 	<li>Run the command: <code>git config --global user.email "YOUR EMAIL ADDRESS"</code></li>
-	<li>You will then need to <a href="https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git" target="_blank">authenticate</a> with Github from Git</li>
-	<li>To authenticate, you need to generate SSH keys for each computer you will be using</li>
-	<li>First check for existing SSH keys--Run the command: <code>ls -al ~/.ssh</code></li>
-	<li>Generate a new SSH key--Run the command: <code>ssh-keygen -t rsa -C "your_email@example.com"</code></li>
-	<li>Enter a file to save the key (default settings are recommended) [press enter]</li>
-	<li>You'll then be asked to enter a passphrase</li>
-	<li>Re-enter passphrase</li>
-	<li>You'll then be given the ID to your SSH key</li>
-	<li>Ensure SSH agent is enabled--Run the command: <code>$ eval "$(ssh-agent -s)"</code></li>
-	<li>Add your generated SSH key to the ssh-agent--Run the command: <code>ssh-add ~/.ssh/id_rsa</code></li>
-	<li>Copy the SSH key to your clipboard for adding to your account--Run the command: <code> pbcopy < ~/.ssh/id_rsa.pub</code></li>
-	<li>Open up your browser</li>
-	<li>Go to github.com</li>
-	<li>Login to your account</li>
-	<li>In the top right corner of any page click the user settings token/icon</li>
-	<li>In the user settings sidebar click SSH keys</li>
-	<li>Click Add SSH key</li>
-	<li>In the Title field add a descriptive label for the new key. e.g. "Personal Macbook Air"</li>
-	<li>Paste your key into the "Key" field</li>
-	<li>Click Add Key</li> 
-	<li>Confirm the action by entering your GitHub password</li>
-	<li>Open your terminal to test the connection</li>
-	<li>Run the command: <code>ssh -T git@github.com</code></li>
-	<li>You may be prompted with a warning--verify the RSA key fingerprint in the warning message and type yes</li>
-	<li>If the username in the following greeting message matches your username then you've successfully set up your SSH key</li>
 	<li>Open your web browser</li>
 	<li>Go to github.com</li>
 	<li>Create a new repository</li>
@@ -82,9 +57,8 @@ body{
 	<li><code>git commit -m "my first commit"</code></li>
 	<li><code>git remote add origin git@github.com:me/my-project.git</code></li>
 	<li><code>git checkout -b gh-pages</code></li>
+	<li>Enter your GitHub credentials</li>
 	<li><code>git push origin gh-pages</code></li>
-	
-	
 </ol>
 
 
@@ -98,7 +72,7 @@ body{
 		<li>Open up your Terminal</li>
 		<li>Install surge by running: <code>npm install --global surge</code></li>
 		<li>launch project by running: <code>surge path/to/myproject myproject.surge.sh</code></li>
-	
+		<li>Enter credentials to create an account or login to Surge</li>
 	</ol>
 <br>
 <h3>Conclusion:</h3>
